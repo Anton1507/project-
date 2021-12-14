@@ -1,0 +1,61 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+.form div input{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30em;
+        padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+
+}
+
+.form div label {
+    margin-bottom: .5rem;
+}
+
+.button_submit{
+    margin: 10px;
+    align-self: center;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffff;
+    text-align: center;
+    
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: #0d6efd;;
+    border: 1px solid #0d6efd;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}
+
+.notActiv_button{
+    margin: 10px;
+    align-self: center;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ffff;
+    text-align: center;
+    
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-color: #adb5bd;;
+    border: 1px solid #adb5bd;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+}

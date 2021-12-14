@@ -1,0 +1,41 @@
+.main_contener{
+    display: flex;
+    justify-content: space-between;
+}
+.main_navbar{
+    width: 20%;
+    background-color: rgba(80, 80, 80, 0.192);
+}
+.main_content{
+    width: 80%;
+    height: 100%;
+}
+
+
+.main{
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+    
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+
+    width: 250px;
+    margin: 20px 15px;
+    padding: 10px;
+    border: black solid 2px;
+    border-radius: 15px;
+    box-shadow: 3px 5px 20px 0px rgba(34, 60, 80, 0.35);
+
+}
+.button{
+   margin-top:auto;
+   border:1px solid black;
+   border-radius: 10px;
+   box-shadow: 3px 5px 20px 0px rgba(34, 60, 80, 0.35);
+}
+

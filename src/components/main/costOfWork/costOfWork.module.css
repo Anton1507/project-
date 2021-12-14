@@ -1,0 +1,9 @@
+.box_main{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 5%;
+}
+.box_main table { 
+    border: 1px solid rgba(182, 182, 182, 0.438);
+}

@@ -1,0 +1,63 @@
+.header_block{
+    height: 100%;
+    background: url("./depositphotos_118712192-stock-photo-stack-of-books-isolated.jpg") center center no-repeat ;
+    background-size: cover;
+}
+.header_content{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.register{
+    position: relative;
+    left:50px;
+    top:20px;
+    padding: 5px;
+    /* border:1px  solid black  ; */
+    border-radius: 10px;
+    box-shadow: 12px;
+    
+    color:white;
+    font-size: 15px;
+    opacity: 0.9;
+    
+    
+
+} 
+.register:hover{
+    color:red;
+}
+
+.regBlock{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+    color:black;
+    padding: 5px;
+    border: black solid 1px;
+}
+.image{
+    width:30px;
+    height: 30px;
+}
+
+.seach_container{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+.navLink{
+    text-decoration: none;
+    margin:40px 10px 0 10px;
+    color: rgb(0, 0, 0);
+    font-size: 22px;
+}
+.navLink:hover{
+    color:red;
+    font-size: 25;
+}

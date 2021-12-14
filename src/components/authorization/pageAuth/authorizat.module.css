@@ -1,0 +1,18 @@
+.block_entrence .form input{
+   
+   display: block
+   
+}
+
+.block_entrence .form{
+    display: flex;
+    flex-direction: column;
+}
+.span_reg{
+    margin-left:20px;
+    color:#00ff;
+}
+.span_reg:hover{
+    color:rgb(247, 107, 26);
+    cursor: pointer;
+}
