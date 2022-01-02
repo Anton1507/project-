@@ -6,7 +6,7 @@ const UserDto = require('../dtos/user_dto');
 const userModel = require("../model/user-model");
 
 class UserService {
-    async registration(email, password, ) {
+    async registration(name,surname,nikName,tel,email,password ) {
 
 
         const candidate = await UserModel.findOne({ email });
@@ -17,15 +17,16 @@ class UserService {
         const hashPassword = await bcrypt.hash(password, 4)
 
 
-        const user = await UserModel.create({ email, password: hashPassword });
+        const user = await UserModel.create({name,surname,nikName,tel, email, password: hashPassword });
 
-
+        const userData ={name,surname,nikName,tel,email};
         const userDto = new UserDto(user);
+        console.log(userData,"userData")
         const tokens = tokenService.generateToken({ ...userDto });
         await tokenService.saveToken(userDto.id, tokens.refreshToken);
         return {
             ...tokens,
-            user: userDto,
+            user: userData,
         }
 
     }
@@ -42,7 +43,7 @@ class UserService {
         const userDto= new UserDto(user);
         const tokens=tokenService.generateToken({...userDto});
         await tokenService.saveToken(userDto.id,tokens.refreshToken);
-        return{...tokens,user:userDto}
+        return{...tokens,user}
 
 
 

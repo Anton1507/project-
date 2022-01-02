@@ -34,13 +34,24 @@ class WorkController{
             res.status(500).json(e)
         }
     }
+    async showWork (req,res){
+        try{
+            const {id}=req.body;
+            console.log(id);
+            const work = await Works.find({_id:id});
+            console.log("work in showWork",work);
+            res.status(200).json("ok");
+        }catch(e){
+            res.status(500).json({"messege":"Error get work","error":`${e}` })
+        }
+    }
     async seachWork(req,res){
         try{
             
-            const seach=req.body.seach;
+            const seach=req.body.seach.toString();
             console.log(seach);
-            const works = await Works.find({name_work:seach}).exec();
-            console.log(works)
+            const works = await Works.find({ name_work: { $regex:seach} },);
+            
             res.status(200).json(works)
         }catch(e){
             console.log(e)
